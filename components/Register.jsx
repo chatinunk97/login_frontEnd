@@ -1,6 +1,6 @@
 export default function Register() {
   return (
-    <div class="register">
+    <div className="register">
       <p>Register Here</p>
       <label htmlFor="username">Username</label>
       <input type="text" id="username"></input>

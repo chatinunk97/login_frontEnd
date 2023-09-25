@@ -1,12 +1,14 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import "./index.css";
 //Component
 import HeaderComponent from "../components/HeaderComponent";
 import Register from "../components/Register";
 import Login from "../components/Login";
+//Context
+import LoginContext from "../context/login-context";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -14,7 +16,11 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/login",
-        element: <Login />,
+        element: (
+          <LoginContext>
+            <Login />
+          </LoginContext>
+        ),
       },
       {
         path: "/register",
