@@ -1,0 +1,49 @@
+.app{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.topbar {
+  display: flex;
+  gap: 10px;
+  height: 70px;
+
+}
+li{
+ 
+  font-size: 1.5rem;
+  box-shadow: 4px 4px 8px rgb(213, 211, 211);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+li:hover{
+  background-color: ghostwhite;
+}
+li > * {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  font-size: 2rem;
+}
+.login,
+.register {
+  margin: auto;
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 500px;
+  box-shadow: 4px 4px 8px grey;
+  padding: 50px;
+  border-radius: 10px;
+}
+input {
+  font-size: 2rem;
+}
