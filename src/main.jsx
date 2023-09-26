@@ -12,11 +12,11 @@ import RegisterContext from "../context/user-register";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/user",
     element: <HeaderComponent />,
     children: [
       {
-        path: "/login",
+        path: "login",
         element: (
           <LoginContext>
             <Login />
@@ -24,7 +24,7 @@ const router = createBrowserRouter([
         ),
       },
       {
-        path: "/register",
+        path: "register",
         element: (
           <RegisterContext>
             <Register />

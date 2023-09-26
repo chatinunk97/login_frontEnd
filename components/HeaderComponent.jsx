@@ -4,10 +4,10 @@ export default function HeaderComponent() {
     <div className="app">
       <div className="topbar">
         <li>
-          <Link to={"/register"}>Register</Link>
+          <Link to={"register"}>Register</Link>
         </li>
         <li>
-          <Link to={"/Login"}>Login</Link>
+          <Link to={"Login"}>Login</Link>
         </li>
       </div>
       <div className="container">

@@ -1,7 +1,7 @@
 import LoginObj from "../hooks/login-hook";
 
 export default function Login() {
-  const { handlePassword, handleUsername, handleSubmit, username, password } =
+  const { handlePassword, handleUsername, handleSubmit } =
     LoginObj();
 
   return (
