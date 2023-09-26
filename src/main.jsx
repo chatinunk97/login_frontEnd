@@ -8,6 +8,7 @@ import Register from "../components/Register";
 import Login from "../components/Login";
 //Context
 import LoginContext from "../context/login-context";
+import RegisterContext from "../context/user-register";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/register",
-        element: <Register />,
+        element: (
+          <RegisterContext>
+            <Register />
+          </RegisterContext>
+        ),
       },
     ],
   },

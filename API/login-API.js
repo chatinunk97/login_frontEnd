@@ -21,7 +21,7 @@ export default async (username, password) => {
       title: "Login Failed!",
       text: data.loginResult,
       icon: "error",
-      confirmButtonText: "Cool",
+      confirmButtonText: "Close",
     });
   }
 };

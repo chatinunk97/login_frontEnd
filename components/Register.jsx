@@ -1,4 +1,8 @@
+import RegisterObj from '../hooks/register-hook'
+
 export default function Register() {
+
+
   return (
     <div className="register">
       <p>Register Here</p>
